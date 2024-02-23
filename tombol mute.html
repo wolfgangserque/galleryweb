@@ -1,0 +1,27 @@
+
+
+<!-- SCRIPT YG WORKS -->
+<button onclick="toggleMute()" id="button1">Mute</button>
+<!-- SCRIPT YG WORKS -->
+
+
+
+
+<audio controls autoplay loop id="myAudio">
+    <source src="https://static.wixstatic.com/mp3/a211e7_3b37e0bbea8846ecb697332ded509703.mp3" type="audio/mp3">
+    Maaf, browser Anda tidak mendukung tag audio.
+</audio>
+
+<button onclick="toggleMute()">Mute</button>
+
+<script>
+    var audio = document.getElementById("myAudio");
+
+    function toggleMute() {
+        if (audio.muted) {
+            audio.muted = false;
+        } else {
+            audio.muted = true;
+        }
+    }
+</script>
